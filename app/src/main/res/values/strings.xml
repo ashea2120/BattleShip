@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BattleShip</string>
+
+
+    <string name="button_play">Play 2-Player</string>
+    <string name="button_credits">Credits</string>
+
+    <string name="cell_status_vacant">empty</string>
+    <string name="cell_status_occupied">occupied</string>
+    <string name="cell_status_hit">hit</string>
+    <string name="cell_status_missed">miss</string>
+</resources>
