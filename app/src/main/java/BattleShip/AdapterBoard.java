@@ -21,9 +21,6 @@ import team2.BattleShip.R;
 public class AdapterBoard extends ArrayAdapter<Cell> {
     private LayoutInflater inflater;
 
-    /**
-     * adopted from Frank Ibem's course
-     */
     public AdapterBoard(Context context, List<Cell> objects) {
         super(context, -1, objects);
         inflater = LayoutInflater.from(context);

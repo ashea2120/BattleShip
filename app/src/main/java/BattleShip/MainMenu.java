@@ -30,11 +30,13 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
     }
 
     private void button2Click() {
-        startActivity(new Intent("team2.shattlebip.MainActivity"));
+        Intent mainIntent = new Intent(this, MainActivity.class);
+        startActivity(mainIntent);
     }
 
     private void button5Click() {
-        startActivity(new Intent("team2.shattlebip.Credits"));
+        Intent creditsIntent = new Intent(this, Credits.class);
+        startActivity(creditsIntent);
     }
 
     @Override

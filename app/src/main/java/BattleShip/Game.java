@@ -33,10 +33,7 @@ public class Game {
 
     private Game() {
     }
-
-    /**
-     * Zach's singleton pattern
-     */
+    
     public static Game getInstance() {
         if (instance == null)
             instance = new Game();

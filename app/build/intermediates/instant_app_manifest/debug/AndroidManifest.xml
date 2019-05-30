@@ -16,28 +16,35 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
-        <activity android:name="team2.BattleShip.MainMenu" >
+        <activity android:name="BattleShip.Transition" />
+        <activity android:name="BattleShip.MainMenu" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="team2.BattleShip.MainActivity" >
+        <activity android:name="BattleShip.MainActivity" >
             <intent-filter>
                 <action android:name="team2.shattlebip.MainActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="team2.BattleShip.Credits" >
+        <activity android:name="BattleShip.Credits" >
             <intent-filter>
                 <action android:name="team2.shattlebip.Credits" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="team2.shattlebip.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

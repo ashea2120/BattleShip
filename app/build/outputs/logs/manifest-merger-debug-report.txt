@@ -1,9 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:2:1-34:12
+ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:2:1-35:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Ashley\.gradle\caches\transforms-2\files-2.1\58db59832acf419600be74103a1ba10d\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Ashley\.gradle\caches\transforms-2\files-2.1\5066fdc52897573da299282899a98070\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Ashley\.gradle\caches\transforms-2\files-2.1\a9c82ed27a31a3de1fb65a48ceb81ec7\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Ashley\.gradle\caches\transforms-2\files-2.1\5d5b13e659fdcb877ef10764d0843c36\AndroidManifest.xml:17:1-22:12
@@ -30,25 +31,27 @@ MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Ashley\.gradle\cach
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Ashley\.gradle\caches\transforms-2\files-2.1\73105d0d7b50ccd5d8bf366653cd0195\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Ashley\.gradle\caches\transforms-2\files-2.1\b25b1eeed4026c33c418b3b44f2b7a6c\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Ashley\.gradle\caches\transforms-2\files-2.1\6aa085447c84db13e00e889155016130\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:2:1-35:12
 	package
 		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:3:5-31
 		INJECTED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:2:1-34:12
+		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:2:1-35:12
 		INJECTED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:2:1-34:12
+		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:2:1-35:12
 		INJECTED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:5:5-32:19
+ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:5:5-33:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Ashley\.gradle\caches\transforms-2\files-2.1\58db59832acf419600be74103a1ba10d\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Ashley\.gradle\caches\transforms-2\files-2.1\58db59832acf419600be74103a1ba10d\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Ashley\.gradle\caches\transforms-2\files-2.1\b9f433ceacf1784b8454771830c9ae85\AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Ashley\.gradle\caches\transforms-2\files-2.1\b9f433ceacf1784b8454771830c9ae85\AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Ashley\.gradle\caches\transforms-2\files-2.1\9d16d95cc927d52dd2531e6082f54ae6\AndroidManifest.xml:22:5-23:19
@@ -65,48 +68,54 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Ashley\.gr
 		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:10:9-68
-activity#team2.BattleShip.MainMenu
-ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:11:9-16:20
+activity#BattleShip.Transition
+ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:11:9-67
 	android:name
-		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:11:19-59
+		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:11:19-55
+activity#BattleShip.MainMenu
+ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:12:19-53
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:12:13-15:29
+ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:13:13-17:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:13:17-69
+ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:14:17-69
 	android:name
-		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:13:25-66
+		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:14:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:14:17-77
+ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:16:17-77
 	android:name
-		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:14:27-74
-activity#team2.BattleShip.MainActivity
-ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:18:9-23:20
+		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:16:27-74
+activity#BattleShip.MainActivity
+ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:19:9-25:20
 	android:name
-		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:18:19-63
+		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:19:19-57
 intent-filter#action:name:team2.shattlebip.MainActivity+category:name:android.intent.category.DEFAULT
-ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:19:13-22:29
+ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:20:13-24:29
 action#team2.shattlebip.MainActivity
-ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:20:17-72
+ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:21:17-72
 	android:name
-		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:20:25-69
+		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:21:25-69
 category#android.intent.category.DEFAULT
-ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:21:17-76
+ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:23:17-76
 	android:name
-		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:21:27-73
-activity#team2.BattleShip.Credits
-ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:25:9-31:20
+		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:23:27-73
+activity#BattleShip.Credits
+ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:26:9-32:20
 	android:name
-		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:25:19-58
+		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:26:19-52
 intent-filter#action:name:team2.shattlebip.Credits+category:name:android.intent.category.DEFAULT
-ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:26:13-30:29
+ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:27:13-31:29
 action#team2.shattlebip.Credits
-ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:27:17-67
+ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:28:17-67
 	android:name
-		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:27:25-64
+		ADDED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml:28:25-64
 uses-sdk
 INJECTED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Ashley\AndroidStudioProjects\BattleShip\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Ashley\.gradle\caches\transforms-2\files-2.1\58db59832acf419600be74103a1ba10d\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Ashley\.gradle\caches\transforms-2\files-2.1\58db59832acf419600be74103a1ba10d\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Ashley\.gradle\caches\transforms-2\files-2.1\5066fdc52897573da299282899a98070\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Ashley\.gradle\caches\transforms-2\files-2.1\5066fdc52897573da299282899a98070\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Ashley\.gradle\caches\transforms-2\files-2.1\a9c82ed27a31a3de1fb65a48ceb81ec7\AndroidManifest.xml:20:5-44
