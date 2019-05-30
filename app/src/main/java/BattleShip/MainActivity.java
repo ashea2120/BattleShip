@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         textViewGameStage = (TextView) findViewById(R.id.text_view_game_stage);
         textViewMessage = (TextView) findViewById(R.id.text_view_message);
         buttonRestart = (Button) findViewById(R.id.button_initialize);
-        buttonAttack = (Button) findViewById(R.id.button_attack);
+        buttonAttack = (Button) findViewById(R.id.button_turn_over);
         buttonUpgrade = (Button) findViewById(R.id.button_upgrade);
         gridViewBoard1 = (GridView) findViewById(R.id.gridViewBoard1);
         gridViewBoard2 = (GridView) findViewById(R.id.gridViewBoard2);
