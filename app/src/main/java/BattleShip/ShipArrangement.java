@@ -1,8 +1,8 @@
-package team2.BattleShip;
+package BattleShip;
 
-/**
- * @author Paul
- */
+import BattleShip.AdapterBoard;
+import BattleShip.Cell;
+
 public class ShipArrangement {
     Cell checkL1, checkL2, checkL3, checkL4, checkL5;
     Cell checkM1, checkM2, checkM3;

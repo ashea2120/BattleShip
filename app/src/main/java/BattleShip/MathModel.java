@@ -1,13 +1,13 @@
-package team2.BattleShip;
+package BattleShip;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-/**
- * @author Zach
- *         Vu integrated cell addition
- */
+import BattleShip.AdapterBoard;
+import BattleShip.Cell;
+import BattleShip.Player;
+
 public class MathModel {
     static private Player player;
 

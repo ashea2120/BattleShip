@@ -1,12 +1,13 @@
-package team2.BattleShip;
+package BattleShip;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import BattleShip.Cell;
+import BattleShip.Ship;
+
 /**
  * player's fleet: how many ships have been arranged, which ship is attacking,...
- *
- * @author Vu
  */
 public class Player {
     private int numShipsArranged = 0;

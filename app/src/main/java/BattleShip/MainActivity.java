@@ -1,4 +1,4 @@
-package team2.BattleShip;
+package BattleShip;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,10 +8,14 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import BattleShip.AdapterBoard;
+import BattleShip.Cell;
+import BattleShip.Game;
+import team2.BattleShip.R;
+
 /**
  * android activity for game play
  *
- * @author Vu
  */
 public class MainActivity extends AppCompatActivity {
     private int numCellsBoardSide;

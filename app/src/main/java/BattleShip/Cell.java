@@ -1,9 +1,7 @@
-package team2.BattleShip;
+package BattleShip;
 
 /**
  * each cell on game board
- *
- * @author Vu
  */
 public class Cell {
     private int playerNum;

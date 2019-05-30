@@ -1,4 +1,4 @@
-package team2.BattleShip;
+package BattleShip;
 
 import android.content.Context;
 import android.view.View;
@@ -9,11 +9,16 @@ import android.widget.TextView;
 
 import java.util.Random;
 
+import BattleShip.AdapterBoard;
+import BattleShip.Cell;
+import BattleShip.MathModel;
+import BattleShip.Player;
+import BattleShip.Ship;
+import BattleShip.ShipArrangement;
+
 /**
  * controls game flow
  *
- * @author Vu calls methods defined by Zach, Paul
- *         Zach applies design pattern and replaced game stage strings with enums
  */
 public class Game {
     private static Game instance;

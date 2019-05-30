@@ -1,4 +1,4 @@
-package team2.BattleShip;
+package BattleShip;
 
 import android.content.Context;
 import android.support.v4.content.ContextCompat;
@@ -11,11 +11,12 @@ import android.widget.GridView;
 
 import java.util.List;
 
+import BattleShip.Cell;
+import team2.BattleShip.R;
+
 /**
  * programmatically inflates game boards as gridViews
  *
- * @author Vu
- *         Zach applied design pattern
  */
 public class AdapterBoard extends ArrayAdapter<Cell> {
     private LayoutInflater inflater;

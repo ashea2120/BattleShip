@@ -1,4 +1,4 @@
-package team2.BattleShip;
+package BattleShip;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -8,9 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-/**
- * @author Paul
- */
+import team2.BattleShip.R;
+
 public class MainMenu extends AppCompatActivity implements View.OnClickListener {
     Button button1;
     Button button11;

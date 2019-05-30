@@ -1,11 +1,10 @@
-package team2.BattleShip;
+package BattleShip;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-/**
- * @author Paul
- */
+import team2.BattleShip.R;
+
 public class Credits extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

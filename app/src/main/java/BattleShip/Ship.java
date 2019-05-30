@@ -1,12 +1,12 @@
-package team2.BattleShip;
+package BattleShip;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import BattleShip.Cell;
+
 /**
  * each ship: how many cells left to arrange, how many attacks left,...
- *
- * @author Vu
  */
 public class Ship {
     private int numCellsAdded = 0;
