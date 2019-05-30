@@ -1,4 +1,4 @@
-# CE-450 Lab 7 (2019 Spring)
+# CE-450 Final Project (2019 Spring)
 ---
 This repository is for App Dev Final Project. 
  
