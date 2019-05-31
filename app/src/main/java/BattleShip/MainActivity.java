@@ -1,7 +1,9 @@
 package BattleShip;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
@@ -23,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonAttack, buttonUpgrade, buttonRestart;
     private GridView gridViewBoard1, gridViewBoard2;
     private AdapterBoard adapterBoard1, adapterBoard2;
+    private String gameState;
+    private Button turnOver;
 
     /**
      * passes variables to class Game and initializes game
@@ -30,10 +34,27 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_activity);
+        if (savedInstanceState != null)
+        {
+            //gameState = savedInstanceState.getString(text_view_message);
+        }
+        else
+        {
 
-        setFields();
-        enableGame();
+            setContentView(R.layout.main_activity);
+            setFields();
+            enableGame();
+            turnOver = (Button)findViewById(R.id.button_turn_over);
+            turnOver.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(MainActivity.this,
+                            Transition.class);
+                    //intent.putExtra(EXTRA_MESSAGE, mOrderMessage);
+                    startActivity(intent);
+                }
+            });
+        }
     }
 
     private void enableGame() {
@@ -56,4 +77,30 @@ public class MainActivity extends AppCompatActivity {
         adapterBoard1 = new AdapterBoard(this, new ArrayList<Cell>());
         adapterBoard2 = new AdapterBoard(this, new ArrayList<Cell>());
     }
+
+
+    public void turnOver(View view) {
+        //preserve the state of main
+        Intent transitionIntent = new Intent(this, Transition.class);
+        startActivity(transitionIntent);
+    }
+
+    // This callback is called only when there is a saved instance that is previously saved by using
+    // onSaveInstanceState(). We restore some state in onCreate(), while we can optionally restore
+    // other state here, possibly usable after onStart() has completed.
+    // The savedInstanceState Bundle is same as the one used in onCreate().
+    /*@Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        //textView.setText(savedInstanceState.getString(TEXT_VIEW_KEY));
+    }
+
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+
+        // Always call the superclass so it can save the view hierarchy state
+        super.onSaveInstanceState(savedInstanceState);
+    }*/
+
+
 }

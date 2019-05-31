@@ -9,4 +9,6 @@
     <color name="colorUnknown">#ff888888</color>
     <color name="colorVacant">#ffffffff</color>
     <color name="colorOccupied">#ff00ff00</color>
+    <color name="colorBlack">#000000</color>
+
 </resources>

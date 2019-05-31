@@ -48,7 +48,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bot's Board" />
+            android:text="Other player's Board" />
 
         <GridView
             android:id="@+id/gridViewBoard2"
@@ -90,6 +90,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="RESTART" />
+
+            <Button
+                android:id="@+id/button_turn_over"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:text="Turn Over" />
+
+
         </LinearLayout>
 
         <LinearLayout

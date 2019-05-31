@@ -15,7 +15,7 @@ import team2.BattleShip.R;
 public class Transition extends AppCompatActivity{
 
     public TextView switchText;
-    public int currentPlayer = 1; //correlates to the current player
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,16 +23,14 @@ public class Transition extends AppCompatActivity{
         setContentView(R.layout.activity_transition);
         switchText = (TextView)findViewById(R.id.switchplayer);
         //simple if to switch between the character
-        if(currentPlayer == 1) {currentPlayer = 2;}
-        else if (currentPlayer == 2) {currentPlayer = 1;}
-        switchText.setText("Please hand the device to Player " + currentPlayer);
+        switchText.setText("Please hand the device to the other player.");
     }
 
     public Transition() {
 
     }
 
-    public void switchPlayer(View view) {
-
+    public void doneSwitching(View view) {
+        setContentView(R.layout.main_activity);
     }
 }
