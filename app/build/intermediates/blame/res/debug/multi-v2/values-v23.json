@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Ashley\\AndroidStudioProjects\\BattleShip\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "C:\\Users\\lucky\\Documents\\GitHub\\BattleShip\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Ashley\\.gradle\\caches\\transforms-2\\files-2.1\\5066fdc52897573da299282899a98070\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\lucky\\.gradle\\caches\\transforms-2\\files-2.1\\d6f150531c67f46916384ff60e5e74c6\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

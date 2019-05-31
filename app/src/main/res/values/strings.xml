@@ -9,4 +9,13 @@
     <string name="cell_status_occupied">occupied</string>
     <string name="cell_status_hit">hit</string>
     <string name="cell_status_missed">miss</string>
+    <string name="attack">ATTACK</string>
+    <string name="action">ACTION</string>
+    <string name="your_board">Your Board</string>
+    <string name="bot_s_board">Bot\'s Board</string>
+    <string name="upgrade">UPGRADE</string>
+    <string name="restart">RESTART</string>
+    <string name="appearance">appearance</string>
+    <string name="unknown">unknown</string>
+    <string name="turn_over">Turn Over</string>
 </resources>

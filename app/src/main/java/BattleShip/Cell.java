@@ -1,10 +1,6 @@
 package team2.BattleShip;
 
-/**
- * each cell on game board
- *
- * @author Vu
- */
+
 public class Cell {
     private int playerNum;
     private Status status;

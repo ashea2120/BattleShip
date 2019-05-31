@@ -3,16 +3,12 @@ package team2.BattleShip;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * player's fleet: how many ships have been arranged, which ship is attacking,...
- *
- * @author Vu
- */
+
 public class Player {
     private int numShipsArranged = 0;
     private int numShips = 3;
     private int playerNum;
-    private List<Ship> ships = new ArrayList<>(numShips);
+    private List<team2.BattleShip.Ship> ships = new ArrayList<>(numShips);
 
     /**
      * fleet:
@@ -24,11 +20,11 @@ public class Player {
     public Player(int playerNum) {
         this.playerNum = playerNum;
 
-        Ship ship = new Ship(playerNum, Ship.ShipType.LITTLE_GUY);
+        team2.BattleShip.Ship ship = new team2.BattleShip.Ship(playerNum, team2.BattleShip.Ship.ShipType.LITTLE_GUY);
         ships.add(ship);
-        ship = new Ship(playerNum, Ship.ShipType.MIDDLE_MAN);
+        ship = new team2.BattleShip.Ship(playerNum, team2.BattleShip.Ship.ShipType.MIDDLE_MAN);
         ships.add(ship);
-        ship = new Ship(playerNum, Ship.ShipType.BIG_BOY);
+        ship = new team2.BattleShip.Ship(playerNum, team2.BattleShip.Ship.ShipType.BIG_BOY);
         ships.add(ship);
     }
 
@@ -40,7 +36,7 @@ public class Player {
         return numShips;
     }
 
-    public List<Ship> getShips() {
+    public List<team2.BattleShip.Ship> getShips() {
         return ships;
     }
 
@@ -55,8 +51,8 @@ public class Player {
     /**
      * add cell to the ship being arranged
      */
-    public void addCell(Cell cell) {
-        Ship ship = ships.get(numShipsArranged);
+    public void addCell(team2.BattleShip.Cell cell) {
+        team2.BattleShip.Ship ship = ships.get(numShipsArranged);
 
         ship.addCell(cell);
         if (!ship.canAddCells())
@@ -67,7 +63,7 @@ public class Player {
      * @return 1 alive ship didn't finish attacking
      */
     public boolean canAttack() {
-        for (Ship ship : ships)
+        for (team2.BattleShip.Ship ship : ships)
             if (ship.canAttack())
                 return true;
         return false;
@@ -76,17 +72,17 @@ public class Player {
     /**
      * let attacking ship attack tapped cell
      */
-    public void attackCell(Cell cell) {
-        Ship ship = getNextShipCanAttack();
+    public void attackCell(team2.BattleShip.Cell cell) {
+        team2.BattleShip.Ship ship = getNextShipCanAttack();
         ship.attackCell(cell);
     }
 
     /**
      * @return next attack will be made by which ship?
      */
-    public Ship getNextShipCanAttack() {
+    public team2.BattleShip.Ship getNextShipCanAttack() {
         int index = 0;
-        Ship ship;
+        team2.BattleShip.Ship ship;
         do {
             ship = ships.get(index);
             index++;
@@ -98,7 +94,7 @@ public class Player {
      * upgrade fleet
      */
     public void upgrade() {
-        for (Ship ship : ships)
+        for (team2.BattleShip.Ship ship : ships)
             ship.upgrade();
     }
 
@@ -106,7 +102,7 @@ public class Player {
      * after done attacking
      */
     public void resetNumsAttacksMade() {
-        for (Ship ship : ships)
+        for (team2.BattleShip.Ship ship : ships)
             ship.setNumAttacksMade(0);
     }
 
@@ -115,7 +111,7 @@ public class Player {
      */
     public int getNumShipsAlive() {
         int numShipsAlive = 0;
-        for (Ship ship : ships)
+        for (team2.BattleShip.Ship ship : ships)
             if (ship.isAlive())
                 numShipsAlive++;
         return numShipsAlive;

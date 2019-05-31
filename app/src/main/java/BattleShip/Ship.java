@@ -3,11 +3,6 @@ package team2.BattleShip;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * each ship: how many cells left to arrange, how many attacks left,...
- *
- * @author Vu
- */
 public class Ship {
     private int numCellsAdded = 0;
     private int numAttacksMade = 0;
@@ -17,7 +12,7 @@ public class Ship {
     private ShipType shipType;
     private int numCells;
     private int numAttacksAllowed;
-    private List<Cell> cells;
+    private List<team2.BattleShip.Cell> cells;
 
     /**
      * creates ship according to ship type
@@ -67,8 +62,8 @@ public class Ship {
     /**
      * add 1 cell to ship during arrangement
      */
-    public void addCell(Cell cell) {
-        cell.setStatus(Cell.Status.OCCUPIED);
+    public void addCell(team2.BattleShip.Cell cell) {
+        cell.setStatus(team2.BattleShip.Cell.Status.OCCUPIED);
         cells.add(cell);
         numCellsAdded++;
     }
@@ -90,11 +85,11 @@ public class Ship {
     /**
      * this ship now attacks 1 cell
      */
-    public void attackCell(Cell cell) {
-        if (cell.getStatus() == Cell.Status.VACANT)
-            cell.setStatus(Cell.Status.MISSED);
-        if (cell.getStatus() == Cell.Status.OCCUPIED)
-            cell.setStatus(Cell.Status.HIT);
+    public void attackCell(team2.BattleShip.Cell cell) {
+        if (cell.getStatus() == team2.BattleShip.Cell.Status.VACANT)
+            cell.setStatus(team2.BattleShip.Cell.Status.MISSED);
+        if (cell.getStatus() == team2.BattleShip.Cell.Status.OCCUPIED)
+            cell.setStatus(team2.BattleShip.Cell.Status.HIT);
         numAttacksMade++;
     }
 
@@ -118,8 +113,8 @@ public class Ship {
      * @return some cell hasn't been hit
      */
     public boolean isAlive() {
-        for (Cell cell : cells)
-            if (cell.getStatus() != Cell.Status.HIT)
+        for (team2.BattleShip.Cell cell : cells)
+            if (cell.getStatus() != team2.BattleShip.Cell.Status.HIT)
                 return true;
         return false;
     }

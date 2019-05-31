@@ -9,12 +9,7 @@ import android.widget.TextView;
 
 import java.util.Random;
 
-/**
- * controls game flow
- *
- * @author Vu calls methods defined by Zach, Paul
- *         Zach applies design pattern and replaced game stage strings with enums
- */
+
 public class Game {
     private static Game instance;
     private Stage stage;
@@ -23,29 +18,25 @@ public class Game {
     private TextView textViewGameStage, textViewMessage;
     private Button buttonAttack, buttonUpgrade, buttonRestart;
     private GridView gridViewBoard1, gridViewBoard2;
-    private AdapterBoard adapterBoard1, adapterBoard2;
-    private Player player1, player2;
+    private team2.BattleShip.AdapterBoard adapterBoard1, adapterBoard2;
+    private team2.BattleShip.Player player1, player2;
 
     private Game() {
     }
 
-    /**
-     * Zach's singleton pattern
-     */
+
     public static Game getInstance() {
         if (instance == null)
             instance = new Game();
         return instance;
     }
 
-    /**
-     * passes variables from MainActivity
-     */
+
     public void setFields(Context context, int numCells1side,
                           TextView textViewGameStage, TextView textViewMessage,
                           Button buttonAttack, Button buttonUpgrade, Button buttonRestart,
                           GridView gridViewBoard1, GridView gridViewBoard2,
-                          AdapterBoard adapterBoard1, AdapterBoard adapterBoard2) {
+                          team2.BattleShip.AdapterBoard adapterBoard1, team2.BattleShip.AdapterBoard adapterBoard2) {
         this.context = context;
         this.numCells1side = numCells1side;
         this.textViewGameStage = textViewGameStage;
@@ -59,9 +50,7 @@ public class Game {
         this.adapterBoard2 = adapterBoard2;
     }
 
-    /**
-     * [re]starts game by clearing boards and letting bot secretly arrange its fleet
-     */
+
     public void initialize() {
         buttonRestart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,15 +65,15 @@ public class Game {
         adapterBoard1.addCells(gridViewBoard1, 1, getNumCellsBoardArea());
         adapterBoard2.addCells(gridViewBoard2, 2, getNumCellsBoardArea());
 
-        player1 = new Player(1);
-        player2 = new Player(2);
+        player1 = new team2.BattleShip.Player(1);
+        player2 = new team2.BattleShip.Player(2);
 
         letP2arrange();
     }
 
     private void letP2arrange() {
 //        generateShipPlacementDeprecated();
-        MathModel.generateShipPlacement(player2, adapterBoard2, numCells1side); // Zach's code
+        team2.BattleShip.MathModel.generateShipPlacement(player2, adapterBoard2, numCells1side); // Zach's code
         enableGameStageArranging();
     }
 
@@ -97,7 +86,7 @@ public class Game {
         gridViewBoard1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Cell cell = (Cell) parent.getAdapter().getItem(position);
+                team2.BattleShip.Cell cell = (team2.BattleShip.Cell) parent.getAdapter().getItem(position);
                 player1.addCell(cell);
                 adapterBoard1.notifyDataSetChanged();
 
@@ -118,12 +107,12 @@ public class Game {
     }
 
     private boolean checkArrange() {
-        ShipArrangement shipArr = new ShipArrangement();
-        AdapterBoard adapterBoard = adapterBoard1;
+        team2.BattleShip.ShipArrangement shipArr = new team2.BattleShip.ShipArrangement();
+        team2.BattleShip.AdapterBoard adapterBoard = adapterBoard1;
         int c = 0;
         for (int i = 0; i < adapterBoard.getCount(); i++) {
-            Cell cell = adapterBoard1.getItem(i);
-            if (cell.getStatus() == Cell.Status.OCCUPIED) {
+            team2.BattleShip.Cell cell = adapterBoard1.getItem(i);
+            if (cell.getStatus() == team2.BattleShip.Cell.Status.OCCUPIED) {
                 c = c + 1;
                 if (c == 10) {
                     if (((shipArr.checkArrangeLH(adapterBoard)) || (shipArr.checkArrangeLV(adapterBoard)))) {
@@ -170,7 +159,7 @@ public class Game {
         gridViewBoard2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Cell cell = (Cell) parent.getAdapter().getItem(position);
+                team2.BattleShip.Cell cell = (team2.BattleShip.Cell) parent.getAdapter().getItem(position);
                 player1.attackCell(cell);
                 adapterBoard2.notifyDataSetChanged();
 
@@ -178,7 +167,7 @@ public class Game {
                     disableClicking();
                     setMessage("you won; click RESTART");
                 } else if (player1.canAttack()) {
-                    Ship ship = player1.getNextShipCanAttack();
+                    team2.BattleShip.Ship ship = player1.getNextShipCanAttack();
                     setMessage(ship.getNumAttacksLeft() + " attack(s) left for your ship " +
                             (player1.getShips().indexOf(ship) + 1));
                 } else {
@@ -193,12 +182,12 @@ public class Game {
     private void letP2attack() {
         Random random = new Random();
         while (player2.canAttack()) {
-            Cell cell;
+            team2.BattleShip.Cell cell;
             do {
                 cell = adapterBoard1.getItem(random.nextInt(getNumCellsBoardArea()));
             }
-            while (cell.getStatus() == Cell.Status.HIT ||
-                    cell.getStatus() == Cell.Status.MISSED);
+            while (cell.getStatus() == team2.BattleShip.Cell.Status.HIT ||
+                    cell.getStatus() == team2.BattleShip.Cell.Status.MISSED);
             player2.attackCell(cell);
             adapterBoard1.notifyDataSetChanged();
 
@@ -254,13 +243,13 @@ public class Game {
     private void generateShipPlacementDeprecated() {
         Random random = new Random();
         for (int i = 0; i < player2.getNumShips(); i++) {
-            Ship ship = player2.getShips().get(i);
+            team2.BattleShip.Ship ship = player2.getShips().get(i);
             int randomRow = i * 2 + random.nextInt(2),
                     randomColumn = random.nextInt(2),
                     randomPosition = randomRow * numCells1side + randomColumn;
             for (int j = 0; j < ship.getNumCells(); j++) {
-                Cell cell = adapterBoard2.getItem(randomPosition + j);
-                cell.setStatus(Cell.Status.OCCUPIED);
+                team2.BattleShip.Cell cell = adapterBoard2.getItem(randomPosition + j);
+                cell.setStatus(team2.BattleShip.Cell.Status.OCCUPIED);
                 ship.addCell(cell);
             }
         }

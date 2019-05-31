@@ -11,42 +11,33 @@ import android.widget.GridView;
 
 import java.util.List;
 
-/**
- * programmatically inflates game boards as gridViews
- *
- * @author Vu
- *         Zach applied design pattern
- */
-public class AdapterBoard extends ArrayAdapter<Cell> {
+
+public class AdapterBoard extends ArrayAdapter<team2.BattleShip.Cell> {
     private LayoutInflater inflater;
 
-    /**
-     * adopted from Frank Ibem's course
-     */
-    public AdapterBoard(Context context, List<Cell> objects) {
+
+    public AdapterBoard(Context context, List<team2.BattleShip.Cell> objects) {
         super(context, -1, objects);
         inflater = LayoutInflater.from(context);
     }
 
-    /**
-     * sets appearance color according to playerNum and cell.Status
-     */
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View view = inflater.inflate(R.layout.layout_cell, parent, false);
-        Cell cell = getItem(position);
+        team2.BattleShip.Cell cell = getItem(position);
 
         Button button = (Button) view.findViewById(R.id.button_board_cell);
 
-        if (cell.getStatus() == Cell.Status.HIT)
+        if (cell.getStatus() == team2.BattleShip.Cell.Status.HIT)
             button.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.colorHit));
-        else if (cell.getStatus() == Cell.Status.MISSED)
+        else if (cell.getStatus() == team2.BattleShip.Cell.Status.MISSED)
             button.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.colorMissed));
 
         else if (cell.getPlayerNum() == 2)
             button.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.colorUnknown));
 
-        else if (cell.getStatus() == Cell.Status.VACANT)
+        else if (cell.getStatus() == team2.BattleShip.Cell.Status.VACANT)
             button.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.colorVacant));
         else
             button.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.colorOccupied));
@@ -60,6 +51,6 @@ public class AdapterBoard extends ArrayAdapter<Cell> {
     public void addCells(GridView gridView, int playerNum, int numCells) {
         gridView.setAdapter(this);
         for (int i = 0; i < numCells; i++)
-            this.add(new Cell(playerNum, Cell.Status.VACANT));
+            this.add(new team2.BattleShip.Cell(playerNum, team2.BattleShip.Cell.Status.VACANT));
     }
 }

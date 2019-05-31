@@ -39,7 +39,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Your Board" />
+            android:text="@string/your_board" />
 
         <GridView
             android:id="@+id/gridViewBoard1"
@@ -48,7 +48,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bot's Board" />
+            android:text="@string/bot_s_board" />
 
         <GridView
             android:id="@+id/gridViewBoard2"
@@ -71,31 +71,31 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ACTION" />
+                android:text="@string/action" />
 
             <Button
-                android:id="@+id/button_turn_over"
+                android:id="@+id/button_attack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ATTACK" />
+                android:text="@string/attack" />
 
             <Button
                 android:id="@+id/button_upgrade"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="UPGRADE" />
+                android:text="@string/upgrade" />
 
             <Button
                 android:id="@+id/button_initialize"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RESTART" />
+                android:text="@string/restart" />
 
             <Button
                 android:id="@+id/button_turn_over"
                 android:layout_width="88dp"
                 android:layout_height="wrap_content"
-                android:text="Turn Over" />
+                android:text="@string/turn_over" />
 
         </LinearLayout>
 
@@ -107,7 +107,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="appearance" />
+                android:text="@string/appearance" />
 
             <Button
                 style="@style/StyleButtonColor"
@@ -122,7 +122,7 @@
             <Button
                 style="@style/StyleButtonColor"
                 android:background="@color/colorUnknown"
-                android:text="unknown" />
+                android:text="@string/unknown" />
 
             <Button
                 style="@style/StyleButtonColor"

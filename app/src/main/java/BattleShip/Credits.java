@@ -3,9 +3,7 @@ package team2.BattleShip;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-/**
- * @author Paul
- */
+
 public class Credits extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
